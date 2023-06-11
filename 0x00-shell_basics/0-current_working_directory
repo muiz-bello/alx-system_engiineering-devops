@@ -1,2 +1,5 @@
 #!/bin/bash
-cwd =$(pwd)
+
+cwd=$(pwd)
+echo "Current working directory: $cwd"
+
