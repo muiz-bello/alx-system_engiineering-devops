@@ -1,0 +1,6 @@
+#!/bin/bash
+water_base10=$(echo "ibase=water; $WATER" | bc)
+stir_base10=$(echo "ibase=stir; $STIR" | bc)
+result_base10=$(echo "$water_base10 + $stir_base10" | bc)
+result_bestchol=$(echo "obase=bestchol; $result_base10" | bc)
+echo "$result_bestchol"
